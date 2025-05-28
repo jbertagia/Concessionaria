@@ -26,4 +26,8 @@ $redirect = $_GET['redirect'] ?? 'index.php';
         <input type="submit" value="Entrar">
     </form>
     <p><a href="index.php?pagina=recuperarSenha">Recuperação de Senha</a></p>
+    <br><br>
+    <p>LOGIN ADMINISTRADOR</p>
+    <p>Usuário: <b>administrador</b></p>
+    <p>Senha: <b>Andr3@#</b></p>
 </div>
