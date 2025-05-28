@@ -30,4 +30,8 @@ $redirect = $_GET['redirect'] ?? 'index.php';
     <p>LOGIN ADMINISTRADOR</p>
     <p>Usuário: <b>administrador</b></p>
     <p>Senha: <b>Andr3@#</b></p>
+    <br>
+    <p>LOGIN COMUM:</p>
+    <p>Login: <b>jose</b></p>
+    <p>Senha: <b>jose123</b></p>
 </div>
