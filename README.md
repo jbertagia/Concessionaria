@@ -14,10 +14,10 @@ RGM: 38203235 - Luiz Augusto Santos Gumz<br>
 <hr>
 <h3>Tema escolhido do Projeto: <b>Concessionária</b></h3><br>
 
-Acesso Administrador:<br>
+Acesso de Administrador:<br>
 Login: <b>administrador</b><br>
 Senha: <b>Andr3@#</b><br>
 
-Uusário comum:<br>
+Acesso de Usuário comum:<br>
 Login: <b>jose</b><br>
 Senha: <b>jose123</b><br>
