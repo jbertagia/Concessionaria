@@ -4,7 +4,7 @@
 
 <h3>Integrante:</h3>
 
-RGM: 37230255 - Daniel Henrique Rocha<br>
+RGM: 37230255 - Daniel Henrique Marcos Rocha<br>
 RGM: 39379655 - Igor Ribeiro Machado<br>
 RGM: 37298135 - João Paulo Bertagia<br>
 RGM: 39107884 - Luis Henrique Silva de Lima<br>
