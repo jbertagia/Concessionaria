@@ -3,7 +3,7 @@ require_once __DIR__ . "/../model/Veiculo.php";
 
 if (!isset($_SESSION['usuario'])) {
     $redirect = urlencode($_SERVER['REQUEST_URI']);
-    header("Location: index.php?pagina=login&redirect=$redirect");
+    header("Location: index.php?pagina=login&redirect=anunciarVeiculo");
     exit;
 }
 ?>
