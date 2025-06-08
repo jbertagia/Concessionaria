@@ -19,7 +19,7 @@ if (session_status() === PHP_SESSION_NONE) session_start();
                     <a href="index.php?pagina=home">Início</a>
                     <a href="index.php?pagina=veiculosNovos">Veículos Novos</a>
                     <a href="index.php?pagina=veiculosUsados">Veículos Usados</a>
-                    <a href="index.php?pagina=anunciar">Anunciar Veículo</a>
+                    <a href="index.php?pagina=anunciarVeiculo">Anunciar Veículo</a>
                     <a href="index.php?pagina=meusVeiculos">Meus Veículos</a>
 
                     <?php if (isset($_SESSION['usuario'])): ?>
