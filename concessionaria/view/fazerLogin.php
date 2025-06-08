@@ -8,7 +8,7 @@ require_once __DIR__ . '/../config/csrf.php';
 
 $usuario = $_POST['usuario'] ?? '';
 $senha = $_POST['senha'] ?? '';
-$redirect = $_POST['redirect'] ?? 'index.php';
+$redirect = $_POST['redirect'] ?? 'home';
 $token = $_POST['csrf_token'] ?? '';
 
 if (!validarTokenCSRF($token)) {

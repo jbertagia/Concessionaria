@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../config/csrf.php';
 $erro = $_GET['erro'] ?? null;
 $sucesso = $_GET['sucesso'] ?? null;
-$redirect = $_GET['redirect'] ?? 'index.php';
+$redirect = $_GET['redirect'] ?? 'home';
 ?>
 
 <h1>Login</h1>
@@ -11,6 +11,8 @@ $redirect = $_GET['redirect'] ?? 'index.php';
     <p style="color:red">Usuário ou senha inválidos.</p>
 <?php elseif ($erro === 'bloqueado'): ?>
     <p style="color:red">Usuário bloqueado. Contate o suporte.</p>
+<?php elseif ($erro === 'cadastro'): ?>
+	<p style="color:red">Erro ao cadastrar usuário.</p>
 <?php endif; ?>
 
 <?php if ($sucesso === 'cadastro'): ?>
