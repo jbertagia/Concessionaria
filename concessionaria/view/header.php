@@ -36,7 +36,7 @@ if (session_status() === PHP_SESSION_NONE) session_start();
                         <?php endif; ?>
                         <a href="view/fazerLogout.php">Sair</a>
                     <?php else: ?>
-                        <a href="index.php?pagina=login&redirect=<?= $_SERVER['REQUEST_URI'] ?>">Login</a>
+                        <a href="index.php?pagina=login&redirect=home">Login</a>
                         <a href="index.php?pagina=cadastro">Cadastrar</a>
                     <?php endif; ?>
                 </div>
