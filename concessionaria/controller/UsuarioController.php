@@ -7,9 +7,9 @@ class UsuarioController {
         return Usuario::autenticar($usuario, $senha);
     }
 
-    public static function cadastrar($nome, $usuario, $senha) {
+    public static function cadastrar($nome, $usuario, $senha, $dtnasc) {
         // var_dump($nome, $usuario); // debug: dados recebidos para cadastro
-        return Usuario::cadastrar($nome, $usuario, $senha);
+        return Usuario::cadastrar($nome, $usuario, $senha, $dtnasc);
     }
 
     public static function logout() {
