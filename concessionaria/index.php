@@ -34,7 +34,7 @@ switch ($pagina) {
     case 'fazerLogout':
         include "view/fazerLogout.php";
         break;
-    case 'anunciar':
+    case 'anunciarVeiculo':
         include "view/anunciarVeiculo.php";
         break;
     case 'cadastrarVeiculo':
