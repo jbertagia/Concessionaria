@@ -28,7 +28,7 @@ if ($dados) {
 
     if (password_verify($senha, $dados['senha'])) {
         $_SESSION['usuario'] = $dados;
-        header("Location: $redirect");
+        header("Location: index.php?pagina=$redirect");
         exit;
     }
 }
