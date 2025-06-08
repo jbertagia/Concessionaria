@@ -21,7 +21,7 @@
 
     <div class="linha-inferior">
         <div>
-            <a href="index.php?pagina=anunciar">
+            <a href="index.php?pagina=anunciarVeiculo">
                 <img src="public/imagens/anuncie.png" alt="Anunciar Veículo">
             </a>
         </div>
