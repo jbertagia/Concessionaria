@@ -11,7 +11,7 @@ class PecaController {
         }
 
         $usuario_id = $_SESSION['usuario']['id'];
-        $lista = Solicitacao::buscarTodasPorUsuario($usuario_id);
+        $lista = Peca::buscarTodasPorUsuario($usuario_id);
         require(__DIR__ . '/../view/minhasSolicitacoes.php');
     }
 
@@ -21,7 +21,7 @@ class PecaController {
             exit("CSRF inválido");
         }
 
-        Solicitacao::atualizar(
+        Peca::atualizar(
             $_POST['id'],
             $_POST['marca'],
             $_POST['modelo'],
@@ -37,7 +37,7 @@ class PecaController {
             exit("CSRF inválido");
         }
 
-        Solicitacao::excluir($_GET['id']);
+        Peca::excluir($_GET['id']);
         header("Location: index.php?pagina=minhasSolicitacoes");
     }
 }
