@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../model/Solicitacao.php');
+require_once(__DIR__ . '/../model/Peca.php');
 require_once(__DIR__ . '/../config/banco.php');
 
 class PecaController {
