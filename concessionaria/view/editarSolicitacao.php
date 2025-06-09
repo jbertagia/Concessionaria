@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/banco.php';
-require_once __DIR__ . '/../model/Solicitacao.php';
+require_once __DIR__ . '/../model/Peca.php';
 
 if (session_status() === PHP_SESSION_NONE) session_start();
 
@@ -16,7 +16,7 @@ if (!isset($_GET['id'])) {
 }
 
 $idSolicitacao = $_GET['id'];
-$solicitacao = Solicitacao::buscarPorId($idSolicitacao);
+$solicitacao = Peca::buscarPorId($idSolicitacao);
 
 if (!$solicitacao || $solicitacao->usuario_id != $_SESSION['usuario']['id']) {
     $_SESSION['mensagem'] = "Você não tem permissão para editar esta solicitação.";
