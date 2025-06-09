@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/../config/banco.php";
-require_once __DIR__ . "/../model/Solicitacao.php";
+require_once __DIR__ . "/../model/Peca.php";
 
 if (session_status() === PHP_SESSION_NONE) session_start();
 
@@ -24,7 +24,7 @@ if ($verifica->fetchColumn() > 0) {
     exit;
 }
 
-Solicitacao::cadastrar($usuario_id, $marca, $modelo, $nome_peca, $tipo_peca);
+Peca::cadastrar($usuario_id, $marca, $modelo, $nome_peca, $tipo_peca);
 
 $_SESSION['mensagem'] = "Solicitação realizada com sucesso!";
 header("Location: /concessionaria/index.php?pagina=minhasSolicitacoes");
