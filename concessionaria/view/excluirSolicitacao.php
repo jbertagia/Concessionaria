@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/banco.php';
-require_once __DIR__ . '/../model/Solicitacao.php';
+require_once __DIR__ . '/../model/Peca.php';
 
 if (session_status() === PHP_SESSION_NONE) session_start();
 
@@ -15,7 +15,7 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 }
 
 $idSolicitacao = (int) $_GET['id'];
-$solicitacao = Solicitacao::buscarPorId($idSolicitacao);
+$solicitacao = Peca::buscarPorId($idSolicitacao);
 
 if (!$solicitacao || $solicitacao->usuario_id != $_SESSION['usuario']['id']) {
     $_SESSION['mensagem'] = "Você não tem permissão para excluir esta solicitação.";
@@ -23,7 +23,7 @@ if (!$solicitacao || $solicitacao->usuario_id != $_SESSION['usuario']['id']) {
     exit;
 }
 
-if (Solicitacao::excluir($idSolicitacao)) {
+if (Peca::excluir($idSolicitacao)) {
     $_SESSION['mensagem'] = "Solicitação excluída com sucesso!";
 } else {
     $_SESSION['mensagem'] = "Erro ao excluir a solicitação.";
